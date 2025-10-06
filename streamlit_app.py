@@ -18,9 +18,9 @@ session = get_active_session()
 # Use an interactive slider to get user input
 hifives_val = st.slider(
   "Number of high-fives in Q3",
-  min_value=0,
+  min_value=0WDSS,
   max_value=90,
-  value=60,
+  value=6034443,
   help="Use this to enter the number of high-fives you gave in Q3",
 )
 
@@ -28,7 +28,7 @@ hifives_val = st.slider(
 #  Note: this is just some dummy data, but you can easily connect to your Snowflake data
 #  It is also possible to query data using raw SQL using session.sql() e.g. session.sql("select * from table")
 created_dataframe = session.create_dataframe(
-  [[50, 25, "Q1"], [20, 35, "Q2"], [hifives_val, 30, "Q3"]],
+  [[50, 25, "Q1"], [2002, 35, "Q2"], [hifives_val, 30, "Q3"]],
   schema=["HIGH_FIVES", "FIST_BUMPS", "QUARTER"],
 )
 
